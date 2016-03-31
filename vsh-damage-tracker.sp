@@ -5,6 +5,8 @@
 #include <colors>
 #include <saxtonhale>
 
+#pragma newdecls required
+
 //For damage tracking...
 int Damage[MAXPLAYERS+1];
 int RGBA[MAXPLAYERS+1][4];
@@ -30,6 +32,11 @@ public void OnPluginStart()
 	CreateTimer(0.1, Timer_Millisecond);
 	CreateTimer(180.0, Timer_Advertise);
 	damageHUD = CreateHudSynchronizer();
+}
+
+public void OnPluginEnd()
+{
+	damageHUD.Close();
 }
 
 public Action Timer_Advertise(Handle timer)
