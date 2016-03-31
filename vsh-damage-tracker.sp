@@ -17,11 +17,11 @@ new Handle:damageHUD;
 #define ALPHA 3
 
 public Plugin:myinfo = {
-	name = "Versus Saxton Hale Improvements",
+	name = "Versus Saxton Hale Damage Tracker",
 	author = "Aurora",
-	description = "Some VSH improvements...",
-	version = "2.0",
-	url = "http://uno-gamer.com"
+	description = "A live damage tracker for Versus Saxton Hale. Like the one that appears at the end of the round!",
+	version = "1.0",
+	url = "http://tajdeluca.com"
 };
 
 public OnPluginStart()
